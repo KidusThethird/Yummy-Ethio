@@ -7,8 +7,8 @@
 
 </head>
 <body class="text-gray-500 ">
-    <div> <!-- Main Content-->
-        <div>
+    <div class="grid md:grid-cols-11"> <!-- Main Content-->
+        <div class="md:col-span-1">
             <nav>
                 <div>
                     <h1 >
@@ -35,10 +35,10 @@
             </nav>
         </div> 
 
-        <main class="px-32 ">
+        <main class="px-32 md:col-span-10 pt-5">
                <div class="flex  justify-end">
-                    <a href="" class="">Login</a>
-                    <a href="" class="ml-10">Sign Up</a>
+                    <a href="" class="btn border-orange-600 text-orange-600 lg:border-2">Login</a>
+                    <a href="" class="ml-10 btn border-yellow-500 text-yellow-500 lg:border-2">Sign Up</a>
                </div> 
 
                <header>
@@ -53,7 +53,7 @@
                
 
 
-                <div class="grid grid-cols-3 gap-3">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
                 
 
                 <!--A card start-->
@@ -107,7 +107,7 @@
                </div>
 
                <div class="flex justify-center ">
-                <div class="bg-slate-400 rounded p-1">Load more</div>
+                <div class="bg-slate-400 rounded p-1 btn">Load more</div>
                </div>
                
 

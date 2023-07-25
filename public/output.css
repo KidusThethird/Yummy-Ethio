@@ -550,10 +550,6 @@ video {
   display: grid;
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .justify-end {
   justify-content: flex-end;
 }
@@ -570,6 +566,16 @@ video {
   border-radius: 0.25rem;
 }
 
+.border-orange-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 88 12 / var(--tw-border-opacity));
+}
+
+.border-yellow-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 179 8 / var(--tw-border-opacity));
+}
+
 .bg-slate-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
@@ -582,6 +588,10 @@ video {
 .px-32 {
   padding-left: 8rem;
   padding-right: 8rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-6xl {
@@ -612,9 +622,19 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.text-orange-600 {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-500 {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
 .card {
@@ -631,7 +651,9 @@ video {
 .badge {
   position: absolute;
   top: 1.25rem;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  background-color: rgb(202 138 4 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.4;
   padding: 0.75rem;
   font-size: 0.75rem;
@@ -642,10 +664,53 @@ video {
 .bottom_of_card {
   --tw-bg-opacity: 1;
   background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+  padding: 0.75rem;
 }
 
 .card_image {
   width: 100%;
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 9999px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .md\:col-span-10 {
+    grid-column: span 10 / span 10;
+  }
+
+  .md\:grid-cols-11 {
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:border-2 {
+    border-width: 2px;
+  }
 }
