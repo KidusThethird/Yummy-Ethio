@@ -12,45 +12,58 @@
             <nav>
                 <div>
                     <h1 class="">
-                        <img src="img/yummy.png" class="w-96" alt="">
-                        <a class="flex justify-center font-bold hover:text-red-600" href="">Yummy Ethio</a>
+                        <div class="flex justify-between pr-3">
+                        <div class="flex">
+                        <img src="img/yummy.png" class="md:w-96  w-16" alt="">
+                        <h1 class="md:hidden pt-3 font-bold uppercase">Yummy Ethio</h1>
+                    </div>
+                    <div class="cursor-pointer items-center md:hidden " id="menu_icon">
+                        <svg class="w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+                        </div>  
+                    </div>
+                        <a class=" justify-center font-bold hover:text-red-600 pb-3  hidden md:flex" href="">Yummy Ethio</a>
                     </h1>
                 </div>
-                <ul class=" ">
-                    <li class="flex justify-center text-lg text-yellow-600 hover:font-bold">
-                        <a href="">
-                            <svg class="inline-block w-5 py-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                
+                <ul class=" pb-4 hidden md:block transition duration-1000 ease-in-out" id="menu">
+                    <li class="flex justify-center text-lg text-yellow-600 hover:font-bold border-r-4 border-white hover:border-yellow-600">
+                        
+                        <a href="" >
+                            <svg class="inline-block w-5  pb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
 </svg>
 
-                            <span class="   ">Home</span>
+                            <span class=" pr-10 ">Home</span>
+                            
                         </a>
                     </li>
-                    <li class="flex justify-center text-lg text-yellow-600 hover:font-bold">
-                        <a href="">
-                            <svg class="inline-block w-5 pb-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <li class="flex justify-center text-lg text-yellow-600 hover:font-bold border-r-4 border-white hover:border-yellow-600">
+                        <a href="" class="">
+                            <svg class="inline-block w-5 pb-3 items-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
                               </svg>
                               
-                            <span>About</span>
+                            <span  class=" pr-10 ">About</span>
                         </a>
                     </li>
-                    <li class="flex justify-center text-lg text-yellow-600 hover:font-bold">
+                    <li class="flex justify-center text-lg text-yellow-600 hover:font-bold border-r-4 border-white hover:border-yellow-600">
                         <a href="">
                             <svg class="inline-block w-5 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                               </svg>
                               
-                            <span>Contact</span>
+                            <span  class=" pr-10 ">Contact</span>
                         </a>
                     </li>
                 </ul>
             </nav>
         </div> 
 
-        <main class="px-32 md:col-span-9 pt-5">
+        <main class="px-24 md:px-32 md:col-span-9 pt-5 bg-gray-100 h-screen ">
                <div class="flex  justify-end">
-                    <a href="" class="btn border-orange-600 text-orange-600 lg:border-2 hover:text-white hover:bg-red-500 ">Login</a>
+                    <a href="" class="btn transition ease-in-out duration-500 border-orange-600 text-orange-600 lg:border-2 hover:text-white hover:bg-red-500 ">Login</a>
                     <a href="" class="ml-10 btn border-yellow-500 text-yellow-500 lg:border- hover:bg-yellow-500 hover:text-white">Sign Up</a>
                </div> 
 
@@ -140,5 +153,7 @@
         </main>
 
     </div> <!-- Main content End-->
+
+    <script src="index.js"></script>
 </body>
 </html>
